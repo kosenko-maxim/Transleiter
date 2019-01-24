@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".screen.main.MainActivity">
+    <RelativeLayout
+        android:id="@+id/relativeLayoutTitle"
+        android:layout_width="match_parent"
+        android:layout_height="49dp"
+        android:background="#005fcd">
+
+        <ImageView
+            android:layout_width="114dp"
+            android:layout_height="31dp"
+            android:layout_centerInParent="true"
+            android:layout_margin="3dp"
+            android:background="@drawable/logo" />
+        <ImageView
+            android:layout_width="23dp"
+            android:layout_height="23dp"
+            android:layout_centerVertical="true"
+            android:id="@+id/back"
+            android:layout_marginTop="3dp"
+            android:layout_marginLeft="6dp"
+            android:src="@drawable/back"/>
+    </RelativeLayout>
+
+
+    <com.volcaniccoder.bottomify.BottomifyNavigationView
+        android:id="@+id/bottomify_nav"
+        android:layout_width="match_parent"
+        android:layout_height="49dp"
+        android:layout_alignParentBottom="true"
+        android:background="#ffffff"
+        android:orientation="horizontal"
+        android:textAlignment="center"
+        app:active_color="#0060cd"
+        app:animation_duration="0"
+        app:item_padding="4dp"
+        app:item_text_size="10sp"
+        app:menu="@menu/menu"
+        app:passive_color="#cecdcd"
+        app:pressed_color="#0060cd"
+        app:scale_percent="5" />
+
+    <RelativeLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/relativeLayoutTitle">
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/microfon"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        android:src="@drawable/voice" />
+
+</RelativeLayout>

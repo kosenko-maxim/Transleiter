@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginBottom="49dp"
+    >
+
+    <RelativeLayout
+        android:id="@+id/relativeLayoutTitle"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:background="#005fcd">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="25dp"
+            android:layout_marginBottom="5dp"
+            android:text="История"
+            android:fontFamily="@font/gothic"
+            android:textColor="#ffffff"
+            android:textSize="22dp"
+
+            android:src="@drawable/logo" />
+    </RelativeLayout>
+    <android.support.v4.widget.NestedScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="386dp"
+        android:layout_below="@+id/relativeLayoutTitle"
+        android:layout_marginTop="13dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:background="@drawable/background">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp" />
+
+    </android.support.v4.widget.NestedScrollView>
+
+    <TextView
+        android:id="@+id/textClear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="Тут пока ничего нет..." />
+
+    <ImageView
+        android:id="@+id/up"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="17dp"
+        android:layout_marginBottom="17dp"
+        android:src="@drawable/up"
+        />
+
+</RelativeLayout>

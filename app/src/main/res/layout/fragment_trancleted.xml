@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:id="@+id/relativeLayoutMain"
+        android:layout_width="match_parent"
+        android:layout_height="360dp"
+        android:layout_marginTop="13dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+       >
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="360dp"
+        android:layout_below="@+id/relativeLayoutTitle"
+        android:layout_marginTop="13dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:background="@drawable/background">
+
+        <LinearLayout
+            android:id="@+id/linearlayoutSource"
+            android:layout_width="match_parent"
+            android:layout_height="41dp"
+            android:layout_marginTop="12dp"
+            android:orientation="horizontal"
+            android:weightSum="100">
+
+            <Spinner
+                android:id="@+id/spinnerSource"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="33"></Spinner>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_weight="33">
+
+                <TextView
+                    android:id="@+id/languageNameSourse"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:textSize="15sp"
+                    android:textColor="#dcdcdc"
+                    android:fontFamily="@font/gothic" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="33">
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:id="@+id/speachTextSourse"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="13dp"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/sound" />
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/relativeLayoutSource"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/linearlayoutSource">
+
+            <aaa.bbb.ccc.transleiter.util.EditTextEx
+                android:id="@+id/editText"
+                android:layout_width="match_parent"
+                android:layout_height="90dp"
+                android:textSize="12dp"
+                android:layout_margin="2dp"
+                android:fontFamily="@font/gothic"
+                android:hint="Введите текст..."
+                android:backgroundTint="#ffffff"
+                android:imeOptions="actionSearch"
+                android:singleLine="true"
+                 />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/relativeLayoutLine"
+            android:layout_width="match_parent"
+            android:layout_height="18dp"
+            android:layout_below="@+id/relativeLayoutSource">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/line" />
+
+            <ImageView
+                android:id="@+id/reverse"
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:layout_centerInParent="true"
+                android:src="@drawable/reverse" />
+        </RelativeLayout>
+
+
+        <LinearLayout
+            android:id="@+id/linearlayoutTarget"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/relativeLayoutLine"
+            android:orientation="horizontal"
+            android:weightSum="100">
+
+            <Spinner
+                android:id="@+id/spinnerTarget"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_weight="33"></Spinner>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_weight="33">
+
+                <TextView
+                    android:id="@+id/languageNameTarget"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:textSize="15sp"
+                    android:textColor="#dcdcdc"
+                    android:fontFamily="@font/gothic" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="33">
+
+                <ImageView
+                    android:id="@+id/speachTextTarget"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="13dp"
+                android:layout_centerVertical="true"
+                    android:src="@drawable/sound" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/relativeLayoutTarget"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="2dp"
+            android:layout_below="@+id/linearlayoutTarget">
+
+            <TextView
+                android:id="@+id/trancleitedText"
+                android:layout_width="match_parent"
+                android:layout_height="90dp"
+                android:textSize="12dp"
+                android:fontFamily="@font/gothic"
+                android:textColor="#000000" />
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/relativeLayoutLine2"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/relativeLayoutTarget"
+            android:background="#dedede" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/relativeLayoutLine2">
+
+            <ImageView
+                android:id="@+id/deleteText"
+                android:layout_width="23dp"
+                android:layout_height="23dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="7dp"
+                android:src="@drawable/clear" />
+
+            <ImageView
+                android:id="@+id/copyText"
+                android:layout_width="23dp"
+                android:layout_height="23dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginBottom="10dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="7dp"
+                android:src="@drawable/clipboard" />
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+
+
+</RelativeLayout>

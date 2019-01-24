@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/action_translate"
+        android:checked="true"
+        app:showAsAction="always"
+        android:checkable="true"
+        android:icon="@drawable/text1"
+        android:title="Text" />
+    <item
+        android:id="@+id/action_history"
+        android:icon="@drawable/history1"
+        android:title="History" />
+    <item android:title=""/>
+    <item
+        android:id="@+id/action_phrasebook"
+        android:icon="@drawable/phrasebook1"
+        android:title="Phrasebook" />
+    <item
+        android:id="@+id/action_settings"
+        android:icon="@drawable/setting1"
+        android:title="Settings" />
+</menu>
