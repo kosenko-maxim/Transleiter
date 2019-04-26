@@ -9,3 +9,4 @@
  - Realm - для хранения истории поиска запросов
  - Для MVP использован Mosby
  - Также использовал RxJava
+ ### [Скачать APK](https://yadi.sk/d/PESe7-VtHoBzog)
